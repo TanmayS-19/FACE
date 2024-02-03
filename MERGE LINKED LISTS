@@ -1,0 +1,13 @@
+n = int(input())
+uinput = input().split()
+numbers = [i for i in uinput]
+
+n1 = int(input())
+uinput1 = input().split()
+numbers1 = [i for i in uinput1]
+
+numbers = numbers + numbers1
+numbers.sort()
+
+final = "->".join(numbers)+"->NULL"
+print(final)
