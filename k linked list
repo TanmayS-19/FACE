@@ -1,0 +1,19 @@
+n = int(input("n "))
+lst = []
+for i in range (n):
+    num = input(f"Enter elements for list"+str(i+1)+" ")
+    lst.append(num)
+#print(lst)
+final = " ".join(lst)
+final = final.split("-1")
+print(final)
+lst1 = [i for i in final if i.strip()]
+#lst1.sort()
+print(lst1)
+final1 = "".join(lst1)
+print(final1)
+lst2 = [i for i in final1 if i.strip()]
+lst2.sort()
+#print(lst2)
+final2 = " ".join(lst2)
+print(final2)
